@@ -43,6 +43,8 @@ public class PlayerAction : MonoBehaviour
 
         yScale = 1.25f;
 
+        //7/11
+
         if(ChooseColor.name == "blue")
         {
             sr.sprite = playerSprite[0];
