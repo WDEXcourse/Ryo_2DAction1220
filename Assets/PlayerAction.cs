@@ -39,9 +39,9 @@ public class PlayerAction : MonoBehaviour
 
         alphafrag = false;
 
-        xScale = 1.25f;
+        xScale = 0.2f;
 
-        yScale = 1.25f;
+        yScale = 0.2f;
 
         if(ChooseColor.name == "blue")
         {
@@ -110,12 +110,12 @@ public class PlayerAction : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.S) && Grounded == true)
         {
-            yScale = 0.625f;
+            yScale = 0.1f;
         }
 
         if (Input.GetKeyUp(KeyCode.S))
         {
-            yScale = 1.25f;
+            yScale = 0.2f;
         }
         //else
         //{
@@ -223,7 +223,7 @@ private void OnTriggerEnter2D(Collider2D collision)
         if (collision.gameObject.tag == "FS")
         {
             Grounded = false;
-            xScale = 1;
+            xScale = 0.2f;
         }
 
         transform.parent = null;
@@ -244,12 +244,12 @@ private void OnTriggerEnter2D(Collider2D collision)
         //transform.localScale = new Vector3(1, 1, 1);
         if(collision.gameObject.tag == "FS")
         {
-            xScale = 0.625f;
+            xScale = 0.1f;
         }
         
         if(collision.gameObject.tag == "Ground")
         {
-            xScale = 1.25f;
+            xScale = 0.2f;
 
             Grounded = true;
         }
