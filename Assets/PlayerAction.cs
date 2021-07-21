@@ -43,10 +43,7 @@ public class PlayerAction : MonoBehaviour
 
         yScale = 0.2f;
 
-        if(ChooseColor.name == "blue")
-        {
-            sr.sprite = playerSprite[0];
-        }
+        sr.sprite = playerSprite[0];
 
         if (ChooseColor.name == "black")
         {
@@ -78,7 +75,7 @@ public class PlayerAction : MonoBehaviour
         {
             //transform.localScale = new Vector3(1, 1, 1);
 
-            transform.position += new Vector3(0.1f, 0, 0);
+            transform.position += new Vector3(0.15f, 0, 0);
 
             transform.rotation = Quaternion.Euler(new Vector3(0, 180f, 0));
         }
@@ -87,7 +84,7 @@ public class PlayerAction : MonoBehaviour
         {
             //transform.localScale = new Vector3(-1, 1, 1);
 
-            transform.position += new Vector3(-0.1f, 0, 0);
+            transform.position += new Vector3(-0.15f, 0, 0);
 
             transform.rotation = Quaternion.Euler(new Vector3(0, -180f, 0));
         }
@@ -110,12 +107,12 @@ public class PlayerAction : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.S) && Grounded == true)
         {
-            yScale = 0.1f;
+            yScale = 0.5f;
         }
 
         if (Input.GetKeyUp(KeyCode.S))
         {
-            yScale = 0.2f;
+            yScale = 1;
         }
         //else
         //{
