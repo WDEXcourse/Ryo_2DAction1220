@@ -1502,7 +1502,7 @@ MonoBehaviour:
   xScale: 0
   yScale: 0
   playerSprite:
-  - {fileID: 21300000, guid: 302ec7883d9f6456b8bef4ab7d44c850, type: 3}
+  - {fileID: 21300000, guid: 27f11f24aa97a41fa94f1e8a289e35be, type: 3}
   - {fileID: 21300000, guid: 99da451c045f2498bb5ccef3386b57f3, type: 3}
   - {fileID: 21300000, guid: 5d546173b0c2b4b178b920f85f2d5f35, type: 3}
   - {fileID: 21300000, guid: ddd71b592ec0741e19d607128b6641fe, type: 3}
@@ -1552,7 +1552,7 @@ SpriteRenderer:
   m_Size: {x: 6.4, y: 6.38}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &681014672

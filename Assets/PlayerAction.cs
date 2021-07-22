@@ -107,12 +107,12 @@ public class PlayerAction : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.S) && Grounded == true)
         {
-            yScale = 0.5f;
+            yScale = 0.1f;
         }
 
         if (Input.GetKeyUp(KeyCode.S))
         {
-            yScale = 1;
+            yScale = 0.2f;
         }
         //else
         //{
