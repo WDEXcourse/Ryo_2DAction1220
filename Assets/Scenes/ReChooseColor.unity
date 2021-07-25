@@ -9841,7 +9841,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1074.2897, y: 278.49973}
+  m_AnchoredPosition: {x: -1081, y: 254.5}
   m_SizeDelta: {x: 140, y: 25}
   m_Pivot: {x: 0.50000024, y: 0.5}
 --- !u!114 &791530908
@@ -9853,10 +9853,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 791530906}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e60da595310541dc9582ad802dc7f88, type: 3}
+  m_Script: {fileID: 11500000, guid: cb9939a747699400da0de7429fe5dd64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NextScene: startScene
 --- !u!114 &791530909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9898,7 +9897,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 791530908}
-        m_MethodName: OnClickButton
+        m_MethodName: OnClickSwitchingScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

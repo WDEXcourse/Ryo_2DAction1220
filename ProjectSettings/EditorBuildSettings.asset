@@ -69,9 +69,15 @@ EditorBuildSettings:
     path: Assets/Scenes/playMusicScene.unity
     guid: 3dce0bb9d5b2a495ca92924e0a34559f
   - enabled: 1
+    path: Assets/Scenes/playMusicAgain.unity
+    guid: 84767b811ba284f97acf40df90bc6b43
+  - enabled: 1
     path: Assets/Scenes/startScene.unity
     guid: c0f9f2249e7714749bbc052a6debec67
   - enabled: 1
     path: Assets/Scenes/chooseColorScene.unity
     guid: 718959df2f65a4b31aff71b317fdc91a
+  - enabled: 1
+    path: Assets/Scenes/ReChooseColor.unity
+    guid: fceb208a2e7964a8f8e5d4ea616c7840
   m_configObjects: {}
