@@ -9853,9 +9853,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 791530906}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb9939a747699400da0de7429fe5dd64, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e60da595310541dc9582ad802dc7f88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NextScene: SelectScene
 --- !u!114 &791530909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9897,7 +9898,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 791530908}
-        m_MethodName: OnClickSwitchingScene
+        m_MethodName: OnClickButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

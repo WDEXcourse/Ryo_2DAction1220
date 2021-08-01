@@ -1498,7 +1498,6 @@ MonoBehaviour:
   alpha: 0
   alphafrag: 0
   jump: 0
-  RootObject: {fileID: 0}
   xScale: 0
   yScale: 0
   playerSprite:
@@ -1891,6 +1890,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6178582007821878841, guid: 426cc5dc8cc734adf9e53bf0b0fcedb8,
+        type: 3}
+      propertyPath: NextScene
+      value: SelectScene
+      objectReference: {fileID: 0}
     - target: {fileID: 6377056171519176410, guid: 426cc5dc8cc734adf9e53bf0b0fcedb8,
         type: 3}
       propertyPath: m_LocalPosition.x

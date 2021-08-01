@@ -80,4 +80,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ReChooseColor.unity
     guid: fceb208a2e7964a8f8e5d4ea616c7840
+  - enabled: 1
+    path: Assets/Scenes/SelectScene.unity
+    guid: 8de835a142cb24f9e81a8aa7d20020dc
   m_configObjects: {}
