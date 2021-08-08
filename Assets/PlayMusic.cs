@@ -24,15 +24,25 @@ public class PlayMusic : MonoBehaviour
         
     }
 
-    public void OnclickMusic1(string bgmname)
+    public void OnclickPlayMusic(string bgmname)
     {
 
         switch (bgmname)
         {
             case "LetsGo":
                 audioSource.PlayOneShot(bgm[0]);
-                Debug.Log("押された");
+                break;
+            case "Popsicle":
+                audioSource.PlayOneShot(bgm[1]);
+                break;
+            case "Harpuia":
+                audioSource.PlayOneShot(bgm[2]);
                 break;
         }
+    }
+
+    public void OnClickStop()
+    {
+        audioSource.Stop();
     }
 }

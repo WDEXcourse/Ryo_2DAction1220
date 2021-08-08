@@ -4798,7 +4798,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ea4879a3369c4afc8353f3f3b3a3bb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 0
   rb: {fileID: 681014674}
+  floatHeight: 0
+  liftForce: 0
+  damping: 0
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  nextscene: 
+  firstpos: {x: 0, y: 0, z: 0}
+  sr: {fileID: 0}
+  alpha: 0
+  alphafrag: 0
+  jump: 0
+  RootObject: {fileID: 0}
+  xScale: 0
+  yScale: 0
+  playerSprite: []
 --- !u!50 &681014674
 Rigidbody2D:
   serializedVersion: 4
