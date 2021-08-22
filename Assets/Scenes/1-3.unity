@@ -1097,6 +1097,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6178582007821878837, guid: 426cc5dc8cc734adf9e53bf0b0fcedb8,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1111
+      objectReference: {fileID: 0}
+    - target: {fileID: 6178582007821878837, guid: 426cc5dc8cc734adf9e53bf0b0fcedb8,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 232
+      objectReference: {fileID: 0}
     - target: {fileID: 6178582007821878841, guid: 426cc5dc8cc734adf9e53bf0b0fcedb8,
         type: 3}
       propertyPath: NextScene
@@ -2396,6 +2406,7 @@ MonoBehaviour:
   alpha: 0
   alphafrag: 0
   jump: 0
+  RootObject: {fileID: 0}
   xScale: 0
   yScale: 0
   playerSprite:

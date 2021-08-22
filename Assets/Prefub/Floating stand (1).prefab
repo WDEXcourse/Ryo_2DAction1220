@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8167943068548469231}
   m_Layer: 0
   m_Name: Floating stand (1)
-  m_TagString: FS
+  m_TagString: ShortStand
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

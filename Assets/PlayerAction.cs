@@ -192,11 +192,16 @@ public class PlayerAction : MonoBehaviour
         {
             rb.AddForce(Vector2.up * 550);
         }
-        if (collision.gameObject.tag == "FS")
+        if (collision.gameObject.tag == "LongStand")
         {
             Grounded = true;
+            xScale = 0.035f;
         }
-
+        if (collision.gameObject.tag == "ShortStand")
+        {
+            Grounded = true;
+            xScale = 0.1f;
+        }
 
         //collision.
     }
@@ -217,12 +222,16 @@ private void OnTriggerEnter2D(Collider2D collision)
         {
             Grounded = false;            
         }
-        if (collision.gameObject.tag == "FS")
+        if (collision.gameObject.tag == "LongStand")
         {
             Grounded = false;
             xScale = 0.2f;
         }
-
+        if (collision.gameObject.tag == "ShortStand")
+        {
+            Grounded = false;
+            xScale = 0.2f;
+        }
         transform.parent = null;
     }
 
@@ -239,15 +248,19 @@ private void OnTriggerEnter2D(Collider2D collision)
         this.gameObject.transform.parent = collision.gameObject.transform;
 
         //transform.localScale = new Vector3(1, 1, 1);
-        if(collision.gameObject.tag == "FS")
+        if (collision.gameObject.tag == "LongStand")
         {
+            Grounded = true;
             xScale = 0.1f;
         }
-        
-        if(collision.gameObject.tag == "Ground")
+        if (collision.gameObject.tag == "ShortStand")
+        {
+            Grounded = true;
+            xScale = 0.1f;
+        }
+        if (collision.gameObject.tag == "Ground")
         {
             xScale = 0.2f;
-
             Grounded = true;
         }
     }

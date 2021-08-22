@@ -38,6 +38,9 @@ public class PlayMusic : MonoBehaviour
             case "Harpuia":
                 audioSource.PlayOneShot(bgm[2]);
                 break;
+            case "High":
+                audioSource.PlayOneShot(bgm[3]);
+                break;
         }
     }
 

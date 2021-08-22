@@ -11,6 +11,8 @@ TagManager:
   - Jampramp
   - Transparent
   - FS
+  - ShortStand
+  - LongStand
   layers:
   - Default
   - TransparentFX
