@@ -75,8 +75,8 @@ public class PlayerAction : MonoBehaviour
         {
             //transform.localScale = new Vector3(1, 1, 1);
 
-            transform.position += new Vector3(0.15f, 0, 0);
-
+            transform.position += new Vector3(0.125f, 0, 0);
+            
             transform.rotation = Quaternion.Euler(new Vector3(0, 180f, 0));
         }
 
@@ -84,7 +84,7 @@ public class PlayerAction : MonoBehaviour
         {
             //transform.localScale = new Vector3(-1, 1, 1);
 
-            transform.position += new Vector3(-0.15f, 0, 0);
+            transform.position += new Vector3(-0.125f, 0, 0);
 
             transform.rotation = Quaternion.Euler(new Vector3(0, -180f, 0));
         }
@@ -102,7 +102,7 @@ public class PlayerAction : MonoBehaviour
         if ((Input.GetKeyDown(KeyCode.W) || Input.GetButtonDown("Jump")) && Grounded == true)
         {
             //Debug.Log("GetButton");
-            rb.AddForce(Vector2.up * 450);
+            rb.AddForce(Vector2.up * 500);
         }
 
         if (Input.GetKeyDown(KeyCode.S) && Grounded == true)
@@ -190,7 +190,7 @@ public class PlayerAction : MonoBehaviour
 
         if (collision.gameObject.tag == "Jampramp")
         {
-            rb.AddForce(Vector2.up * 550);
+            rb.AddForce(Vector2.up * 700);
         }
         if (collision.gameObject.tag == "LongStand")
         {
@@ -251,7 +251,7 @@ private void OnTriggerEnter2D(Collider2D collision)
         if (collision.gameObject.tag == "LongStand")
         {
             Grounded = true;
-            xScale = 0.1f;
+            xScale = 0.035f;
         }
         if (collision.gameObject.tag == "ShortStand")
         {
@@ -323,7 +323,7 @@ private void OnTriggerEnter2D(Collider2D collision)
 
                 //斜め横にジャンプ
                 //rb.velocity.x > 0 ? -3 : 3
-                rb.velocity = new Vector3(3, 0, 0);
+                rb.velocity = new Vector3(4, 0, 0);
             }
         }
     }
