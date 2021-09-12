@@ -8,6 +8,7 @@ public class PlayerAction : MonoBehaviour
     public float speed;
     public Rigidbody2D rb;
     private bool Grounded;
+    private bool MassageGrounded;
     public float floatHeight;
     public float liftForce;
     public float damping;
@@ -105,14 +106,24 @@ public class PlayerAction : MonoBehaviour
             rb.AddForce(Vector2.up * 500);
         }
 
-        if (Input.GetKeyDown(KeyCode.S) && Grounded == true)
+        if (Input.GetKey(KeyCode.S) && Grounded == true)
         {
             yScale = 0.1f;
+        }
+
+        if (Input.GetKey(KeyCode.S) && MassageGrounded == true)
+        {
+            yScale = 0.025f;
         }
 
         if (Input.GetKeyUp(KeyCode.S))
         {
             yScale = 0.2f;
+        }
+
+        if (Input.GetKeyUp(KeyCode.S))
+        {
+            yScale = 0.05f;
         }
         //else
         //{
@@ -120,6 +131,10 @@ public class PlayerAction : MonoBehaviour
         //}
 
         if (Input.GetKeyDown(KeyCode.S) && Grounded == false)
+        {
+            rb.AddForce(Vector2.down * 450);
+        }
+        if (Input.GetKeyDown(KeyCode.S) && MassageGrounded == false)
         {
             rb.AddForce(Vector2.down * 450);
         }
@@ -202,6 +217,12 @@ public class PlayerAction : MonoBehaviour
             Grounded = true;
             xScale = 0.1f;
         }
+        if (collision.gameObject.tag == "GoalSceneCollider2D")
+        {
+            MassageGrounded = true;
+            xScale = 0.2f;
+            yScale = 0.2f;
+        }
 
         //collision.
     }
@@ -232,6 +253,12 @@ private void OnTriggerEnter2D(Collider2D collision)
             Grounded = false;
             xScale = 0.2f;
         }
+        if (collision.gameObject.tag == "GoalSceneCollider2D")
+        {
+            xScale = 0.2f;
+            yScale = 0.2f;
+            MassageGrounded = false;
+        }
         transform.parent = null;
     }
 
@@ -261,7 +288,14 @@ private void OnTriggerEnter2D(Collider2D collision)
         if (collision.gameObject.tag == "Ground")
         {
             xScale = 0.2f;
+            yScale = 0.2f;
             Grounded = true;
+        }
+        if (collision.gameObject.tag == "GoalSceneCollider2D")
+        {
+            xScale = 0.05f;
+            yScale = 0.05f;
+            MassageGrounded = true;
         }
     }
 

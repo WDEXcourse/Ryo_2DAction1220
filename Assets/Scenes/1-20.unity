@@ -6360,7 +6360,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 1
-  nextscene: 1-17
+  nextscene: ClearScene
   firstpos: {x: 0, y: 0, z: 0}
   sr: {fileID: 0}
   alpha: 0
