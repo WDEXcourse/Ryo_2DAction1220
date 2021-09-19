@@ -13,7 +13,6 @@ TagManager:
   - FS
   - ShortStand
   - LongStand
-  - GoalSceneCollider2D
   layers:
   - Default
   - TransparentFX

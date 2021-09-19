@@ -46,6 +46,8 @@ public class PlayerAction : MonoBehaviour
 
         sr.sprite = playerSprite[0];
 
+        MassageGrounded = false;
+
         if (ChooseColor.name == "black")
         {
             sr.sprite = playerSprite[1];
@@ -111,19 +113,9 @@ public class PlayerAction : MonoBehaviour
             yScale = 0.1f;
         }
 
-        if (Input.GetKey(KeyCode.S) && MassageGrounded == true)
-        {
-            yScale = 0.025f;
-        }
-
-        if (Input.GetKeyUp(KeyCode.S))
+        if (Input.GetKeyUp(KeyCode.S) && Grounded == true)
         {
             yScale = 0.2f;
-        }
-
-        if (Input.GetKeyUp(KeyCode.S))
-        {
-            yScale = 0.05f;
         }
         //else
         //{
@@ -217,13 +209,6 @@ public class PlayerAction : MonoBehaviour
             Grounded = true;
             xScale = 0.1f;
         }
-        if (collision.gameObject.tag == "GoalSceneCollider2D")
-        {
-            MassageGrounded = true;
-            xScale = 0.2f;
-            yScale = 0.2f;
-        }
-
         //collision.
     }
 
@@ -252,12 +237,6 @@ private void OnTriggerEnter2D(Collider2D collision)
         {
             Grounded = false;
             xScale = 0.2f;
-        }
-        if (collision.gameObject.tag == "GoalSceneCollider2D")
-        {
-            xScale = 0.2f;
-            yScale = 0.2f;
-            MassageGrounded = false;
         }
         transform.parent = null;
     }
@@ -290,12 +269,6 @@ private void OnTriggerEnter2D(Collider2D collision)
             xScale = 0.2f;
             yScale = 0.2f;
             Grounded = true;
-        }
-        if (collision.gameObject.tag == "GoalSceneCollider2D")
-        {
-            xScale = 0.05f;
-            yScale = 0.05f;
-            MassageGrounded = true;
         }
     }
 
