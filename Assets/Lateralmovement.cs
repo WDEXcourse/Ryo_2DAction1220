@@ -32,7 +32,7 @@ public class Lateralmovement : MonoBehaviour
             Vector3 pos = transform.position;
             pos.x += 5f * Time.deltaTime;
             transform.position = pos;
-            if (gameObject.transform.position.x >= -174)
+            if (gameObject.transform.position.x >= -180)
             {
                 Restart2();
             }
